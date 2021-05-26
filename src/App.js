@@ -2,7 +2,9 @@ import './App.css';
 import Comment from './Components/challenges/comments/Comment';
 import Post from './Components/challenges/posts/Post';
 import User from './Components/challenges/users/User';
+import Tesco from './Components/data-requests/Tesco';
 import ControlledInput from './Components/forms/ControlledInput';
+import Hobby from './Components/hobby-project/Hobby';
 import ReadMore from './Components/hooks/ReadMore';
 import UseEffect from './Components/hooks/UseEffect';
 import Container from "./Components/parent-child/Container";
@@ -61,8 +63,14 @@ const App = () => {
     // <ProductManager/>
 
     // Hooks Exercises
-    <ReadMore/>
+    // <ReadMore/>
     // <UseEffect name="test2"/>
+
+    // Data requests
+    // <Tesco/>
+
+    // Hobby Project
+    <Hobby/>
   );
 }
 
