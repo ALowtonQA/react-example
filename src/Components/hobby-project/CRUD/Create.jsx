@@ -25,6 +25,7 @@ const Create = ({refresh}) => {
         .then((res) => {
            refresh();
         }).catch((err) => {
+            refresh();
             console.error(err.message);
         });
     }

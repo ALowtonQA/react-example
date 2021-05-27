@@ -1,5 +1,5 @@
-import Delete from "../CRUD/Delete";
-import Update from "../CRUD/Update";
+import Delete from "../crud/Delete";
+import Update from "../crud/update/Update";
 
 const Music = ({music, refresh}) => {
     return (

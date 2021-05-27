@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Create from "./CRUD/Create";
+import Create from "./crud/Create";
 import MainTable from "./display/MainTable";
 
 const Hobby = () => {

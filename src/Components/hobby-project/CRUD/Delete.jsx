@@ -9,6 +9,7 @@ const Delete = ({id, refresh}) => {
         .then((resp) => {
             refresh();
         }).catch((err) => {
+            refresh();
             console.log(err.message);
         });
     }
