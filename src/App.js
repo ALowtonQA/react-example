@@ -1,8 +1,9 @@
-import './App.css';
+// import './App.css';
 import Comment from './Components/challenges/comments/Comment';
 import Post from './Components/challenges/posts/Post';
 import User from './Components/challenges/users/User';
 import Tesco from './Components/data-requests/Tesco';
+import Disney from './Components/disney-challenge/Disney';
 import ControlledInput from './Components/forms/ControlledInput';
 import Hobby from './Components/hobby-project/Hobby';
 import ReadMore from './Components/hooks/ReadMore';
@@ -22,6 +23,9 @@ import SearchableList from './Components/states/lifting-states/SearchableList';
 
 const App = () => {
   return (
+    // Disney Challenge
+    <Disney/>
+
     // Basic Structure Exmaple
     // <>
     //   <Header/>
@@ -70,7 +74,7 @@ const App = () => {
     // <Tesco/>
 
     // Hobby Project
-    <Hobby/>
+    // <Hobby/>
   );
 }
 
