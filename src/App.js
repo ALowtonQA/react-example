@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Comment from './Components/challenges/comments/Comment';
 import Post from './Components/challenges/posts/Post';
 import User from './Components/challenges/users/User';

@@ -1,4 +1,9 @@
-html {min-height: 100%}
+img { 
+  width:150px;
+  height:150px;
+}
+
+/* html {min-height: 100%}
 
 body {background-image:linear-gradient(#f8f9fa, #004050)}
 
@@ -91,7 +96,7 @@ input {
   margin-bottom: 0.5em;
   padding:0.5em;
   display:inline-block;
-}
+} */
 
 /* footer {
   background-color: #0f4b5a;

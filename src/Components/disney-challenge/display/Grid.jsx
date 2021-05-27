@@ -1,40 +1,52 @@
+import { useEffect, useState } from "react";
 import PrintImages from "./PrintImages";
 
 const Grid = ({data}) => {
 
-    const one = data.splice(0, 9);
-    const two = data.splice(10, 19);
-    const three = data.splice(20, 29);
-    const four = data.splice(30, 39);
-    const five = data.splice(40, 49);
+    const [ready, setReady] = useState(false);
+    const [objArray, setObjArray] = useState([]);
 
-    const objArray = [one, two, three, four, five];
+    useEffect(() => {
+        const one = data.splice(0, 10);
+        const two = data.splice(0, 10);
+        const three = data.splice(0, 10);
+        const four = data.splice(0, 10);
+        const five = data.splice(0, 10);
+        setObjArray([one, two, three, four, five]);
+        setReady(true);
+    },[]);
 
-    return(
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                {objArray.map((ten, i) => (
-                    <tr key={i}>
-                        <PrintImages objects={ten}/>
+    if (ready) {
+        return(
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
-                ))}
-            </tbody>
-        </table>
-    );
+                </thead>
+                <tbody>
+                    {objArray.map((ten, i) => (
+                        <tr key={i}>
+                            <PrintImages objects={ten}/>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        );
+    } else {
+        return (
+            <h1> Loading... </h1>
+        );
+    }
 }
 
 export default Grid;
