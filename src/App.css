@@ -1,10 +1,22 @@
 body {
-  background-color: #6bafc4;
+  background-color: #c7a66e;
 }
 
 img { 
   width:8vw;
   height:8vw;
+  border-radius:10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 #img-grid {
@@ -35,6 +47,7 @@ img {
   opacity: 0;
   transition: .5s ease;
   background-color: #4da5bfb8;
+  border-radius:10px;
 }
 
 .img-container:hover .img-overlay {
@@ -51,6 +64,11 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.modal-body {
+  overflow-y: auto;
+  max-height: 25vw;
 }
 
 /* html {min-height: 100%}

@@ -4,8 +4,8 @@ const TableRow = ({objects}) => {
 
     return (
         <>
-            {objects.map((object) => (
-                <TableData object={object}/>
+            {objects.map((object, i) => (
+                <TableData key={i} object={object}/>
             ))}
         </>
     );
